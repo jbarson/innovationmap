@@ -261,7 +261,9 @@ button:focus {
 	-webkit-transform: rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg) translateZ(5vmin) translateX(5vmin) translateY(-10vmin);
 	transform: rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg) translateZ(5vmin) translateX(5vmin) translateY(-10vmin);
 }
-
+.level--0::after {
+	content: 'Basement';
+}
 .level--1::after {
 	content: 'L1';
 }
@@ -289,6 +291,12 @@ button:focus {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+
+.level--0 {
+	-webkit-transform: translateZ(-10vmin);
+	transform: translateZ(-10vmin);
 }
 
 .level--2 {
@@ -695,7 +703,8 @@ button:focus {
 .list__item:first-child {
 	margin-top: 2em;
 }
-
+.grouped-by-category [data-category='0']:first-child,
+.grouped-by-category :not([data-category='0']) + [data-category='0'],
 .grouped-by-category [data-category='1']:first-child,
 .grouped-by-category :not([data-category='1']) + [data-category='1'],
 .grouped-by-category [data-category='2']:first-child,
@@ -711,6 +720,8 @@ button:focus {
 	margin-top: 4em;
 }
 
+.grouped-by-category [data-category='0']:first-child::before,
+.grouped-by-category :not([data-category='0']) + [data-category='0']::before,
 .grouped-by-category [data-category='1']:first-child::before,
 .grouped-by-category :not([data-category='1']) + [data-category='1']::before,
 .grouped-by-category [data-category='2']:first-child::before,
