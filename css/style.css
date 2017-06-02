@@ -83,7 +83,8 @@ button:focus {
 	font-size: 1.15em;
 	font-weight: normal;
 	line-height: 1;
-	margin: 0 0 0 1em;
+	
+	color: #2676b7
 }
 
 /* Top Navigation Style */
@@ -94,7 +95,12 @@ button:focus {
 	text-align: center;
 	white-space: nowrap;
 }
-
+.infotech-logo {
+	  position: absolute;
+    height: 75px;
+    top: 9px;
+    left: 925px;
+}
 .codrops-links::after {
 	content: '';
 	position: absolute;
@@ -172,14 +178,14 @@ button:focus {
 .levels {
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 60%;
 }
 
 .surroundings {
 	width: 192vmin;
 	/* double of mall map */
 	height: 128vmin;
-	margin: -64vmin 0 0 -96vmin;
+	margin: -57vmin 0 0 -96vmin;
 	pointer-events: none;
 	-webkit-transition: opacity 0.8s;
 	transition: opacity 0.8s;
@@ -221,8 +227,8 @@ button:focus {
 	pointer-events: auto;
 	-webkit-transition: opacity 1s, -webkit-transform 1s;
 	transition: opacity 1s, transform 1s;
-	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	/*-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);*/
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
@@ -235,7 +241,7 @@ button:focus {
 	top: -2em;
     left: 3.5em;
 	white-space: nowrap;
-	color: #7d7d86;
+	/*color: #7d7d86;*/
 	-webkit-transform: rotateZ(45deg) rotateX(-70deg) translateZ(5vmin);
 	transform: rotateZ(45deg) rotateX(-70deg) translateZ(5vmin);
 	-webkit-transition: -webkit-transform 1s, color 0.3s;
@@ -244,10 +250,10 @@ button:focus {
 	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-.level:hover::after,
+/*.level:hover::after,
 .level--current::after {
 	color: #515158;
-}
+}*/
 
 .level--current::after {
 	-webkit-transform: rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg) translateZ(5vmin) translateX(5vmin) translateY(-10vmin);
@@ -364,7 +370,7 @@ button:focus {
 .levels--selected-6 .level--5 {
 	-webkit-transition-delay: 0.25s;
 	transition-delay: 0.25s;
-}
+}*/
 
 .levels--selected-1 .level--current,
 .levels--selected-1 .level--current::after,
@@ -372,7 +378,7 @@ button:focus {
 .levels--selected-6 .level--current::after {
 	-webkit-transition-delay: 0.45s;
 	transition-delay: 0.45s;
-}*/
+}
 
 /* Current level */
 
@@ -422,8 +428,8 @@ button:focus {
 }
 
 .mallnav--hidden {
-	pointer-events: none;
-	opacity: 0;
+	/*pointer-events: none;
+	opacity: 0;*/
 }
 
 /* Box button */
@@ -695,7 +701,7 @@ button:focus {
 }
 
 .list__item:first-child {
-	margin-top: 2em;
+	/*margin-top: 2em;*/
 }
 .grouped-by-category [data-category='0']:first-child,
 .grouped-by-category :not([data-category='0']) + [data-category='0'],
@@ -711,7 +717,7 @@ button:focus {
 .grouped-by-category :not([data-category='5']) + [data-category='5'],
 .grouped-by-category [data-category='6']:first-child,
 .grouped-by-category :not([data-category='6']) + [data-category='6'] {
-	margin-top: 4em;
+	/*margin-top: 4em;*/
 }
 
 .grouped-by-category [data-category='0']:first-child::before,
@@ -737,30 +743,30 @@ button:focus {
 
 .grouped-by-category [data-category='1']:first-child::before,
 .grouped-by-category :not([data-category='1']) + [data-category='1']::before {
-	content: 'Basement';
-	color: #7cbf7f;
+	/*content: 'Basement';*/
+	color: #2676b7;
 }
 
 .grouped-by-category [data-category='2']:first-child::before,
 .grouped-by-category :not([data-category='2']) + [data-category='2']::before {
-	content: 'Level 1';
-	color: #6584c7;
+	/*content: 'Level 1';*/
+	color: #2676b7;
 }
 
 .grouped-by-category [data-category='3']:first-child::before,
 .grouped-by-category :not([data-category='3']) + [data-category='3']::before {
-	content: 'Level 2';
-	color: #dc4b7c;
+	/*content: 'Level 2';*/
+	color: #2676b7;
 }
 
 .grouped-by-category [data-category='4']:first-child::before,
 .grouped-by-category :not([data-category='4']) + [data-category='4']::before {
-	content: 'Level 3';
-	color: #8d65e0;
+	/*content: 'Level 4';*/
+	color: #2676b7;
 }
 
 .list__item::after {
-	content: 'L' attr(data-level) ' / ' attr(data-space);
+	/*content: 'L' attr(data-level) ' / ' attr(data-space);*/
 	font-size: 0.65em;
 	line-height: 3;
 	position: absolute;
@@ -821,8 +827,8 @@ button:focus {
 	transform: translate3d(0,-100px,0);
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
-	-webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	/*-webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	transition-timing-function: cubic-bezier(0.2,1,0.3,1);*/
 }
 
 .level__pins--active .pin__icon {
@@ -865,21 +871,25 @@ button:focus {
 }
 
 .pin[data-category='1'] .icon--pin {
-	fill: #7cbf7f;
+  fill: #2676b7;
 }
+
 .pin[data-category='2'] .icon--pin {
-	fill: #6584c7;
+  fill: #2676b7;
 }
+
 .pin[data-category='3'] .icon--pin {
-	fill: #dc4b7c;
+  fill: #2676b7;
 }
+
 .pin[data-category='4'] .icon--pin {
-	fill: #8d65e0;
+  fill: #2676b7;
 }
 
 .pin--active .icon--pin {
-	stroke: #515158;
+	stroke: #ffffff;
 	stroke-width: 15px;
+	transform: scale(1.25);
 }
 
 .icon--pin {
@@ -894,7 +904,7 @@ button:focus {
 	width: 50%;
 	height: 50%;
 	fill: white;
-	fill-opacity: 0.6;
+	fill-opacity: 0.9;
 	-webkit-transition: fill-opacity 0.3s;
 	transition: fill-opacity 0.3s;
 }
@@ -935,13 +945,77 @@ button:focus {
 .pin--3-7 { top: 32vmin; left: 37vmin; }
 
 /* Pins for floor 4 */
-.pin--4-1 { top: 55vmin; left: 21vmin; }
-.pin--4-2 { top: 18vmin; left: 20vmin; }
-.pin--4-3 { top: 21vmin; left: 88vmin; }
-.pin--4-4 { top: 52vmin; left: 74vmin; }
-.pin--4-5 { top: 33vmin; left: 38vmin; }
-.pin--4-6 { top: 39vmin; left: 56vmin; }
-.pin--4-7 { top: 58vmin; left: 10vmin; }
+.pin--4-1 {
+  top: 3vmin;
+  left: 17vmin;
+}
+
+.pin--4-2 {
+  top: 4vmin;
+  left: 23vmin;
+}
+
+.pin--4-3 {
+  top: 4vmin;
+  left: 30vmin;
+}
+
+.pin--4-4 {
+  top: 4vmin;
+  left: 37vmin;
+}
+
+.pin--4-5 {
+  top: 4vmin;
+  left: 49vmin;
+}
+
+.pin--4-6 {
+  top: 4vmin;
+  left: 57vmin;
+}
+
+.pin--4-7 {
+  top: 4vmin;
+  left: 66vmin;
+}
+
+/* Pins for floor 5 */
+
+.pin--5-1 {
+  top: 46vmin;
+  left: 32vmin;
+}
+
+.pin--5-2 {
+  top: 13vmin;
+  left: 7vmin;
+}
+
+.pin--5-3 {
+  top: 31vmin;
+  left: 74vmin;
+}
+
+.pin--5-4 {
+  top: 39vmin;
+  left: 74vmin;
+}
+
+.pin--5-5 {
+  top: 38vmin;
+  left: 31vmin;
+}
+
+.pin--5-6 {
+  top: 13vmin;
+  left: 56vmin;
+}
+
+.pin--5-7 {
+  top: 21vmin;
+  left: 8vmin;
+}
 
 /* Mobile compatability */
 .open-search,
